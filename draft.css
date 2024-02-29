@@ -1,0 +1,124 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fef9e7;
+  color: #333;
+  font-size: 16px;
+}
+
+.draft-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  text-align: center;
+}
+
+.yellow-team h2, .yellow-pick {
+  background-color: #ffdf00;
+  color: #333;
+}
+
+.red-team h2, .red-pick {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.picks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player {
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  width: 45%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 480px) {
+  .player {
+    width: 90%;
+  }
+}
+
+/* ... existing CSS ... */
+
+/* Styling for players that have been picked by the Yellow team */
+.yellow-pick {
+  background-color: #ffeb3b; /* Bright yellow background */
+  color: #333; /* Dark text for contrast */
+  border-color: #c8b900; /* Darker yellow for border */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+}
+
+/* Styling for players that have been picked by the Red team */
+.red-pick {
+  background-color: #ff4d4d; /* Bright red background */
+  color: #fff; /* White text for contrast */
+  border-color: #b30000; /* Darker red for border */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+}
+
+.win-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  margin: 10px auto; /* Center the button with automatic horizontal margins */
+  display: block; /* Make the button a block element to fit the width */
+  border: none; /* No border */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Change cursor to indicate button */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.win-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.loading-text {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding for spacing */
+  color: #999; /* A neutral color for the loading text */
+}
+
+.refresh-container {
+  text-align: center; /* Center the refresh button */
+  padding: 20px;
+}
+
+.refresh-button {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.refresh-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ... existing CSS ... */
+
+

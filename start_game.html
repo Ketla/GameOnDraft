@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Start</title>
+    <link rel="stylesheet" href="start_game.css">
+</head>
+<body>
+    <div id="pickOrderSelection">
+        <button id="giveRedFirstPick">GIVE RED TEAM FIRST PICK</button>
+        <button id="giveYellowFirstPick">GIVE YELLOW TEAM FIRST PICK</button>
+    </div>
+    <div id="loadingScreen">
+        Loading game... Please wait.
+    </div>
+    <div id="gameContent" style="display: none;">
+        <h3>Game is Ready!</h3>
+        <h2 id="firstPickDisplay"></h2> <!-- This will display which team has the first pick -->
+    
+<label for="redTeamCaptain" class="redTeamLabel">Red Team Captain:</label>
+<select id="redTeamCaptain">
+    <option value="">Select Red Team Captain</option>
+    <!-- Player options will be dynamically inserted here -->
+</select>
+
+<label for="yellowTeamCaptain" class="yellowTeamLabel">Yellow Team Captain:</label>
+<select id="yellowTeamCaptain">
+    <option value="">Select Yellow Team Captain</option>
+    <!-- Player options will be dynamically inserted here -->
+</select>
+    
+        <button id="lockInCaptains">Lock In Captains</button>
+        <!-- Additional game content goes here -->
+    </div>
+    
+    </div>
+    
+
+    <script src="start_game.js"></script>
+</body>
+</html>

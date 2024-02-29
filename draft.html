@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Viewing Page</title>
+    <link rel="stylesheet" href="Draft.css">
+</head>
+<body>
+    <div class="draft-container">
+      <section class="team-picks yellow-team">
+        <h2>Yellow Team Picks</h2>
+        <div id="yellowPicks" class="picks">
+            <div id="yellowLoading" class="loading-text">Loading players...</div>
+        </div>
+        <button class="win-button" id="yellowWin">WON THE GAME</button>
+    </section>
+    
+    <section class="team-picks red-team">
+        <h2>Red Team Picks</h2>
+        <div id="redPicks" class="picks">
+            <div id="redLoading" class="loading-text">Loading players...</div>
+        </div>
+        <button class="win-button" id="redWin">WON THE GAME</button>
+    </section>
+    </div>
+<div class="refresh-container">
+  <button id="refreshButton" class="refresh-button">Refresh Picks</button>
+</div>
+    <script src="Draft.js"></script>
+</body>
+</html>

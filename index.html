@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GAME ON</h1>
+        <form id="playerForm">
+          <input type="text" id="playerName" placeholder="Enter player name"/>
+            <button id="add-player-button">Add Player</button>
+        </form>
+        <div id="loadingScreen" style="display: none;">
+            Preparing the match... Please wait.
+        </div>
+        <div id="playerList">
+            <!-- Player items will be added here -->
+        </div>
+        <button id="start-game-button">Start Game</button>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+

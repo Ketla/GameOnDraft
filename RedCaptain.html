@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Team Draft</title>
+    <link rel="stylesheet" href="RedCaptain.css">
+</head>
+<body>
+    <div class="draft-container">
+        <section class="team-picks">
+          <div id="loadingIndicator" class="loading-hidden">
+            Picking...
+        </div>
+        <section class="team-picks red-team">
+          <div class="header-with-button">
+            <h2>Red Team Picks</h2>
+            <button id="refreshPageButton" class="refresh-button">Refresh Page</button>
+        </div>
+          <div id="draftStatus" class="draft-status">Loading draft status...</div>
+          <div id="redPicks" class="picks"></div>
+      </section>
+        </section>
+        <section class="available-players">
+            <h2>Available Players</h2>
+            <div id="playerList" class="players"></div>
+        </section>
+        <section class="team-picks yellow-team">
+          <h2>Enemy Team Picks</h2>
+          <div id="yellowPicks" class="picks"></div>
+      </section>
+    </div>
+    <script src="RedCaptain.js"></script>
+</body>
+</html>
